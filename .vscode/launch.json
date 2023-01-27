@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "configurations": [
+    {
+      "name": "Debug: All",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "serverReadyAction": {
+        "pattern": "started server on .+, url: (https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome"
+      }
+    },
+    {
+      "name": "Debug: Client-Side",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5050"
+    },
+    {
+      "name": "Debug: Server-Side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev"
+    }
+  ]
+}
