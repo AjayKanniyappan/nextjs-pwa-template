@@ -1,4 +1,4 @@
-function Meta() {
+function Meta(): JSX.Element {
   return (
     <>
       <title>Next.js PWA Template</title>
