@@ -1,11 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import Meta from '@components/Meta';
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
-        <link rel="manifest" href="/manifest.json" />
+        <Meta />
       </Head>
       <body>
         <Main />

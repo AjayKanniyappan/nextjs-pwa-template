@@ -1,3 +1,11 @@
+import styles from '@styles/Home.module.css';
+
 export default function Home() {
-  return <h1 className="text-3xl font-bold text-center">Hello world!</h1>;
+  return (
+    <div className={styles.container}>
+      <div className="flex items-center justify-center h-screen">
+        <div className="text-black font-bold text-xl">Hello World!</div>
+      </div>
+    </div>
+  );
 }
