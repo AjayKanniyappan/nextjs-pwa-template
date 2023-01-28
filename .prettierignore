@@ -1,0 +1,43 @@
+# DEPENDENCY DIRECTORIES
+/node_modules
+
+# TESTING FOLDERS
+/coverage/
+
+# BUILD FOLDERS
+/.next/
+/out/
+/build/
+/dist/
+
+# ENV FILES
+.env
+.env*.local
+
+# MISC
+.DS_Store
+*.pem
+
+# TEMPORARY FILES
+next-env.d.ts
+
+# PWA FILES
+**/public/precache.*.*.js
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/fallback-*.js
+**/public/precache.*.*.js.map
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+**/public/fallback-*.js
+
+# DEBUG LOGS
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# VERCEL
+.vercel

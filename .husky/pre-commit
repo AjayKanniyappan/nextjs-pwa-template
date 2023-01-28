@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "👨‍💻 Styling your project before committing 🛠️";
+echo "⏱️ Please be calm, this may take a while time ⌛ ....";
+
+# ESLINT STANDARDS CHECKER
+npm run lint ||
+(
+    echo "❌ Oops, You have some errors in your code. Check linter 🔨 Run 'npm run lint', add changes and try to commit it again.";
+    false;
+)
+
+echo "🎉 No error found: committing this now.... ✨🚀";
