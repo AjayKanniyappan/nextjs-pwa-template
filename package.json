@@ -1,7 +1,7 @@
 {
   "name": "nextjs-pwa-template",
   "version": "1.0.0",
-  "description": "A Complete Foundation for Building Robust PWA Apps using Next.js",
+  "description": "A simple progressive web app template using Next.js",
   "keywords": [
     "Next.js",
     "React",
@@ -16,7 +16,7 @@
     "pwa",
     "Template"
   ],
-  "homepage": "https://github.com/AjayKanniyappan/nextjs-pwa-template#readme",
+  "homepage": "https://nextjs-pwa-template-repo.vercel.app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AjayKanniyappan/nextjs-pwa-template.git"
@@ -33,7 +33,7 @@
   "scripts": {
     "build": "next build",
     "clean": "git clean -dfX",
-    "dev": "next dev -p 7070",
+    "dev": "next dev -p 5050",
     "lint": "next lint --fix --max-warnings 0 .",
     "prepare": "husky install",
     "start": "next start -p 5050"

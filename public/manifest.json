@@ -1,13 +1,13 @@
 {
-  "name": "Next.js PWA Template",
-  "short_name": "Next.js PWA",
-  "description": "A Complete Foundation for Building Robust PWA Apps using Next.js",
+  "name": "Cats Realm",
+  "short_name": "Cats Realm",
+  "description": "A simple progressive web app template using Next.js",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
-  "background_color": "#F3EFE0",
-  "theme_color": "#F3EFE0",
+  "background_color": "#f5edce",
+  "theme_color": "#f5edce",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
