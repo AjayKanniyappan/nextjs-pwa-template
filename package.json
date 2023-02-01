@@ -33,7 +33,7 @@
   "scripts": {
     "build": "next build",
     "clean": "git clean -dfX",
-    "dev": "next dev -p 5050",
+    "dev": "next dev -p 7070",
     "lint": "next lint --fix --max-warnings 0 .",
     "prepare": "husky install",
     "start": "next start -p 5050"
