@@ -1,5 +1,9 @@
-import React from 'react';
+import Page from '@components/Page';
 
 export default function facts() {
-  return <div>facts</div>;
+  return (
+    <Page title="hi">
+      <div>facts</div>
+    </Page>
+  );
 }

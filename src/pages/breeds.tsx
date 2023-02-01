@@ -1,5 +1,9 @@
-import React from 'react';
+import Page from '@components/Page';
 
 export default function breeds() {
-  return <div>breeds</div>;
+  return (
+    <Page title="hi">
+      <div>breeds</div>
+    </Page>
+  );
 }

@@ -1,5 +1,5 @@
 /* Defining an array of objects. */
-const useBottomNavigation: Array<{ id: number; label: string; href: string; icon: JSX.Element }> = [
+const bottomNavigation: Array<{ id: number; label: string; href: string; icon: JSX.Element }> = [
   {
     id: 1,
     label: 'Home',
@@ -49,4 +49,4 @@ const useBottomNavigation: Array<{ id: number; label: string; href: string; icon
   },
 ];
 
-export default useBottomNavigation;
+export default bottomNavigation;

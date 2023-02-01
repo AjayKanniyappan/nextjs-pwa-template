@@ -22,6 +22,7 @@ function Meta(): JSX.Element {
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="theme-color" content="#F3EFE0" media="(prefers-color-scheme: light)" />
       <meta name="theme-color" content="#F3EFE0" media="(prefers-color-scheme: dark)" />
+      <meta name="color-scheme" content="dark light" />
       <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
       <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import useBottomNavigation from '@/hooks/useBottomNavigation';
+import bottomNavigation from '@common/bottomNavigation';
 
 /**
  * It's a React component that renders a bottom navigation bar with links to the home page, the facts
@@ -16,7 +16,7 @@ function BottomNav(): JSX.Element {
     <div className="sm:hidden">
       <nav className="fixed bottom-0 w-full rounded-t-2xl bg-[#ECECEC] dark:border-[#1B262C] dark:bg-[#1B2021]">
         <div className="mx-auto h-16 max-w-md flex items-center justify-around px-6">
-          {useBottomNavigation.map((links) => (
+          {bottomNavigation.map((links) => (
             <Link
               key={links.id}
               href={links.href}
