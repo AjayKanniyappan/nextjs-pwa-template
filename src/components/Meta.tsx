@@ -15,7 +15,7 @@ function Meta(): JSX.Element {
       {/* THEMES */}
       <meta name="color-scheme" content="dark light" />
       <meta name="theme-color" content="#F3EFE0" media="(prefers-color-scheme: light)" />
-      <meta name="theme-color" content="#F3EFE0" media="(prefers-color-scheme: dark)" />
+      <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-title" content="Cats Realm" />

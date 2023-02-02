@@ -12,15 +12,15 @@ function NavBar(): JSX.Element {
   return (
     <div className="hidden sm:block justify-end">
       <nav className="text-lg">
-        <ul className="flex items-center">
+        <ul className="flex items-center m-4 font-medium space-x-8 lg:mr-20">
           {navBar.map((links) => (
             <li key={links.id}>
               <Link
                 href={links.href}
                 className={`${
                   router.pathname === links.href
-                    ? 'text-indigo-500 dark:text-indigo-400'
-                    : 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50'
+                    ? 'text-[#0099FF] dark:text-[#E6DDC4]'
+                    : 'text-zinc-600 hover:text-[#000000] dark:text-zinc-400 dark:hover:text-zinc-50'
                 }`}
               >
                 <span className="">{links.label}</span>

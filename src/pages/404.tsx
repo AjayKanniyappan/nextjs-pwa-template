@@ -7,7 +7,7 @@ import CatSvg from '@/common/catSvg';
 function FourOhFour() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
-      <div className="w-7/12 md:w-4/12 lg:w-4/12">
+      <div className="w-7/12 md:w-4/12 lg:w-3/12">
         <CatSvg />
       </div>
       <div className="text-5xl font-dark font-bold">404</div>
