@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import BottomNav from '@components/BottomNav';
 import Footer from './Footer';
+import Header from './Header';
 
 interface Props {
   title: string;
@@ -19,6 +20,8 @@ function Page({ title, children }: Props) {
           <title>Cats</title>
         </Head>
       )}
+
+      <Header />
 
       <main className="mx-auto max-w-screen-md pt-20 pb-16 sm:pb-0">
         <div className="p-6">{children}</div>

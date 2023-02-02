@@ -14,7 +14,7 @@ function BottomNav(): JSX.Element {
 
   return (
     <div className="sm:hidden">
-      <nav className="fixed bottom-0 w-full rounded-t-2xl bg-[#ECECEC] dark:border-[#1B262C] dark:bg-[#1B2021]">
+      <nav className="fixed bottom-0 w-full rounded-t-2xl bg-[#f4f4f5] border-t dark:bg-[#18181b] dark:border-[#393941]">
         <div className="mx-auto h-16 max-w-md flex items-center justify-around px-6">
           {bottomNavigation.map((links) => (
             <Link
@@ -22,7 +22,7 @@ function BottomNav(): JSX.Element {
               href={links.href}
               className={`flex h-full w-full flex-col items-center justify-center space-y-1 ${
                 router.pathname === links.href
-                  ? 'dark:text-[#0099FF] text-[#3C79F5]'
+                  ? 'dark:text-[#fff9d9] text-[#0099FF]'
                   : 'dark:text-[#99A8B2] dark:hover:text-[#FEFBF6] text-[#3C4048] hover:text-[#F2DF3A]'
               }`}
             >

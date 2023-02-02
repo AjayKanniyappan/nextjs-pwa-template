@@ -1,7 +1,7 @@
 {
-  "name": "Next.js PWA Template",
-  "short_name": "Next.js PWA",
-  "description": "A Complete Foundation for Building Robust PWA Apps using Next.js",
+  "name": "Cats Realm",
+  "short_name": "Cats Realm",
+  "description": "A simple progressive web app template using Next.js",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
