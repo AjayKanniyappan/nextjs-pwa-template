@@ -13,6 +13,7 @@ type GetUsersResponse = {
 
 export default async function getUsers() {
   try {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { data, status } = await axios.get<GetUsersResponse>('test', {
       headers: {
         Accept: 'application/json',
