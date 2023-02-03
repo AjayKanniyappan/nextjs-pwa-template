@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const navBar: Array<{ id: number; label: string; href: string }> = [
+const navBar: cat.NavBar = [
   { id: 1, label: 'Facts', href: '/facts' },
   { id: 2, label: 'Breeds', href: '/breeds' },
 ];

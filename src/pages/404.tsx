@@ -4,7 +4,7 @@ import CatSvg from '@/common/catSvg';
 /**
  * "Custom 404 page."
  */
-function FourOhFour() {
+function FourOFour() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
       <div className="w-7/12 md:w-4/12 lg:w-3/12">
@@ -42,4 +42,4 @@ function FourOhFour() {
   );
 }
 
-export default FourOhFour;
+export default FourOFour;

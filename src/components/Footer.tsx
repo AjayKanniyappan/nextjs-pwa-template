@@ -8,7 +8,7 @@ function Footer() {
           <p className="text-lg font-bold text-zinc-800 hover:text-[#000000] dark:text-[#E8E2E2] dark:hover:text-[#F5F5F5]">
             Developed by{' '}
             <Link
-              href="http://ajaykanniyappan.com"
+              href="https://ajaykanniyappan.com"
               className="underline hover:underline-offset-2"
               target="_blank"
               rel="noreferrer"
