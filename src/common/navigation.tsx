@@ -1,4 +1,3 @@
-/* Defining an array of objects. */
 import { BreedSvg, FactSvg, HomeSvg } from '@svg/index';
 
 const bottomNavigation: cat.BottomNavigation = [
@@ -22,4 +21,9 @@ const bottomNavigation: cat.BottomNavigation = [
   },
 ];
 
-export default bottomNavigation;
+const navBar: cat.Navbar = [
+  { id: 1, label: 'Facts', href: '/facts' },
+  { id: 2, label: 'Breeds', href: '/breeds' },
+];
+
+export { bottomNavigation, navBar };

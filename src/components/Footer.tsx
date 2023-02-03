@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function Footer() {
+function Footer(): JSX.Element {
   return (
     <div className="hidden sm:block">
       <footer className="fixed bottom-0 w-full border-t dark:bg-[#18181b] dark:border-[#393941]">

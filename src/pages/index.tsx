@@ -1,4 +1,4 @@
-import Page from '../layouts/Page';
+import Page from '@layouts/Page';
 
 export default function Home(): JSX.Element {
   return (

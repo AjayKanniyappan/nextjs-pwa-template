@@ -1,6 +1,6 @@
-import Page from '../layouts/Page';
+import Page from '@layouts/Page';
 
-export default function facts() {
+export default function facts(): JSX.Element {
   return (
     <Page title="Facts">
       <label

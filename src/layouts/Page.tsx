@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '@/components/Header';
-import { BottomNav, Footer } from '@/components';
+import Coffee from '@/components/Coffee';
+import { BottomNav, Footer } from '@components/index';
 
 function Page({ title, children }: cat.PageProps): JSX.Element {
   return (
@@ -18,6 +19,7 @@ function Page({ title, children }: cat.PageProps): JSX.Element {
       <main>
         <div>{children}</div>
       </main>
+      <Coffee />
       <BottomNav />
       <Footer />
     </>

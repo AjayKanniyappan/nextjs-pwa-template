@@ -1,6 +1,9 @@
 declare namespace cat {
   type BottomNavigation = Array<{ id: number; label: string; href: string; icon: JSX.Element }>;
-  type NavBar = { id: number; label: string; href: string }[];
+  type Data = {
+    Boom: string;
+  };
+  type Navbar = { id: number; label: string; href: string }[];
   type Url = string;
 
   interface PageProps {

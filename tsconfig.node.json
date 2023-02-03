@@ -8,6 +8,7 @@
       "@constants/*": ["./src/constants/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@layouts/*": ["./src/layouts/*"],
+      "@services/*": ["./src/services/*"],
       "@styles/*": ["./src/styles/*"],
       "@svg/*": ["./src/svg/*"]
     }
