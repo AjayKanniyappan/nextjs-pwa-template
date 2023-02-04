@@ -1,8 +1,12 @@
 import Head from 'next/head';
-import Header from '@/components/Header';
-import Coffee from '@/components/Coffee';
-import { BottomNav, Footer } from '@components/index';
+import { BottomNav, Footer, Header } from '@components/index';
 
+/**
+ * `Page` is a function that takes in a `title` and `children` and returns a `JSX.Element`
+ *  It's a layout component
+ * @param  - cat.PageProps
+ * @returns A JSX element
+ */
 function Page({ title, children }: cat.PageProps): JSX.Element {
   return (
     <>
@@ -19,7 +23,6 @@ function Page({ title, children }: cat.PageProps): JSX.Element {
       <main>
         <div>{children}</div>
       </main>
-      <Coffee />
       <BottomNav />
       <Footer />
     </>

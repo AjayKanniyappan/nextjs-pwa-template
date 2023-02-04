@@ -1,14 +1,15 @@
 /**
- * It returns a JSX element that renders an SVG icon
- * @returns A JSX.Element
+ * It returns a React component that renders an SVG
+ * @param  - `className` - the class name to apply to the SVG element.
+ * @returns A JSX element.
  */
-export default function BackArrowSvg(): JSX.Element {
+export default function BackArrowSvg({ className }: cat.Svg): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5"
       viewBox="0 0 20 20"
       fill="currentColor"
+      className={className}
     >
       <path
         fillRule="evenodd"

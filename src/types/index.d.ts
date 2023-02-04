@@ -10,4 +10,13 @@ declare namespace cat {
     title: string;
     children: React.ReactNode;
   }
+
+  interface SectionProps {
+    className?: string;
+    children: React.ReactNode;
+  }
+
+  interface Svg {
+    className?: string;
+  }
 }

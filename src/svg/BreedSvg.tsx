@@ -1,16 +1,17 @@
 /**
- * It returns a JSX element that renders an SVG icon
- * @returns A JSX.Element
+ * It returns a React component that renders an SVG
+ * @param  - `className` - the class name to apply to the SVG element.
+ * @returns A JSX element.
  */
-export default function BreedSvg(): JSX.Element {
+export default function BreedSvg({ className }: cat.Svg): JSX.Element {
   return (
     <svg
-      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
       width="25px"
       height="25px"
       viewBox="-1.5 0 19 19"
-      xmlns="http://www.w3.org/2000/svg"
-      className="cf-icon-svg"
+      fill="currentColor"
+      className={className}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0" />
       <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />

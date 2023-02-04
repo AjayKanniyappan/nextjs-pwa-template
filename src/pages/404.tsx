@@ -25,7 +25,7 @@ export default function FourOFour(): JSX.Element {
           className="flex items-center space-x-2 bg-[#0099ff] hover:bg-[#0087ff] text-gray-100 px-4 py-2 mt-12 rounded transition duration-150"
           title="Return Home"
         >
-          <BackArrowSvg />
+          <BackArrowSvg className="h-5 w-5" />
           <span>Return Home</span>
         </Link>
       </div>

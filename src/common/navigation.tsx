@@ -5,7 +5,7 @@ const bottomNavigation: cat.BottomNavigation = [
     id: 1,
     label: 'Home',
     href: '/',
-    icon: <HomeSvg />,
+    icon: <HomeSvg className="w-6 h-6" />,
   },
   {
     id: 2,

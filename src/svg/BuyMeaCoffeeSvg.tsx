@@ -1,14 +1,15 @@
 /**
- * It returns a JSX element that renders an SVG icon
- * @returns A JSX.Element
+ * It returns a React component that renders an SVG
+ * @param  - `className` - the class name to apply to the SVG element.
+ * @returns A JSX element.
  */
-export default function BuyMeaCoffeeSvg(): JSX.Element {
+export default function BuyMeaCoffeeSvg({ className }: cat.Svg): JSX.Element {
   return (
     <svg
-      className="transition-all rounded-full w-14 hover:shadow-sm shadow-lg ring hover:ring-4 -rotate-45 ring-white sm:-rotate-0 sm:hover:-rotate-45"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 300 300"
-      fill="none"
+      fill="currentColor"
+      className={className}
     >
       <rect width="300" height="300" fill="#FFDD00" />
       <path

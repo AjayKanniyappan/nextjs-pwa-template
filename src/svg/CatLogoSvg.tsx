@@ -1,8 +1,9 @@
 /**
- * It returns a JSX element that renders an SVG icon
- * @returns A JSX.Element
+ * It returns a React component that renders an SVG
+ * @param  - `className` - the class name to apply to the SVG element.
+ * @returns A JSX element.
  */
-export default function CatLogoSvg(): JSX.Element {
+export default function CatLogoSvg({ className }: cat.Svg): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,6 +11,8 @@ export default function CatLogoSvg(): JSX.Element {
       height="100%"
       viewBox="0 0 317.000000 316.000000"
       preserveAspectRatio="xMidYMid meet"
+      fill="currentColor"
+      className={className}
     >
       <g
         transform="translate(0.000000,316.000000) scale(0.100000,-0.100000)"
