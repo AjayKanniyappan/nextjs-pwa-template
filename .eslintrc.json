@@ -29,8 +29,8 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "object-curly-newline": "off",
-    "no-console": "warn", // TO AVOID CONSOLE ERRORS
-    "no-debugger": "warn" // TO AVOID DEBUGGER ERRORS
+    "no-console": "warn", // 👈 TO AVOID CONSOLE ERRORS
+    "no-debugger": "warn" // 👈 TO AVOID DEBUGGER ERRORS
     //"array-element-newline":: ["error", "consistent"],
   }
 }

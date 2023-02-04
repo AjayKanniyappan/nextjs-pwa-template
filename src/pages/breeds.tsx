@@ -1,8 +1,8 @@
-import Page from '@components/Page';
+import Page from '@layouts/Page';
 
-export default function breeds() {
+export default function breeds(): JSX.Element {
   return (
-    <Page title="hi">
+    <Page title="Breeds">
       <div>breeds</div>
     </Page>
   );

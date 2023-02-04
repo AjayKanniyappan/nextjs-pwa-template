@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { navBar } from '@common/navigation';
 
-const navBar: Array<{ id: number; label: string; href: string }> = [
-  { id: 1, label: 'Facts', href: '/facts' },
-  { id: 2, label: 'Breeds', href: '/breeds' },
-];
-
+/**
+ * It's a function that returns a Navbar
+ * @returns A JSX element
+ */
 function NavBar(): JSX.Element {
   const router = useRouter();
 

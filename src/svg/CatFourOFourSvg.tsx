@@ -1,9 +1,11 @@
 /**
- * "Cat svg."
+ * It returns a React component that renders an SVG
+ * @param  - `className` - the class name to apply to the SVG element.
+ * @returns A JSX element.
  */
-function CatSvg(): JSX.Element {
+export default function CatFourOFourSvg({ className }: cat.Svg): JSX.Element {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" className={className}>
       <g id="freepik--background-simple--inject-26">
         <path
           d="M422.92,85.56q-2.52-2.48-5.2-4.8C380.53,48.5,331.15,31.62,283,24.8c-48.8-6.91-100.56-.65-142.61,26.49q-7,4.55-13.59,9.76C91.76,89,75.07,128,70.48,171.92,67,205.45,50.32,231.71,38.89,262.7,26.46,296.41,26.61,337.87,43,370.3c19.46,38.51,58.33,58.19,97.91,70.17,66.83,20.22,141.73,20.16,206.85-6.35,45.14-18.38,91-49.95,109.57-96.7,16.55-41.76,17.34-88.66,11.92-132.72C464,161.86,455,116.93,422.92,85.56Z"
@@ -513,5 +515,3 @@ function CatSvg(): JSX.Element {
     </svg>
   );
 }
-
-export default CatSvg;

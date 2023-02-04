@@ -5,8 +5,12 @@
       "@/*": ["./src/*"],
       "@common/*": ["./src/common/*"],
       "@components/*": ["./src/components/*"],
+      "@constants/*": ["./src/constants/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@styles/*": ["./src/styles/*"]
+      "@layouts/*": ["./src/layouts/*"],
+      "@services/*": ["./src/services/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@svg/*": ["./src/svg/*"]
     }
   },
   "include": [
