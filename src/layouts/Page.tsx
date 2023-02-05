@@ -2,12 +2,11 @@ import Head from 'next/head';
 import { BottomNav, Footer, Header } from '@components/index';
 
 /**
- * `Page` is a function that takes in a `title` and `children` and returns a `JSX.Element`
- *  It's a layout component
- * @param  - cat.PageProps
- * @returns A JSX element
+ * It's a React component that renders a page with a header, footer, and bottom navigation
+ * @param  - title - The title of the page.
+ * @returns A React component that renders a header, footer, and main content.
  */
-function Page({ title, children }: cat.PageProps): JSX.Element {
+function Page({ title, className, children }: cat.PageProps): JSX.Element {
   return (
     <>
       {title === 'Home' ? (
@@ -21,7 +20,7 @@ function Page({ title, children }: cat.PageProps): JSX.Element {
       )}
       <Header />
       <main>
-        <div>{children}</div>
+        <article className={className}>{children}</article>
       </main>
       <BottomNav />
       <Footer />

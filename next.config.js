@@ -10,7 +10,7 @@ const withPWA = require('next-pwa')({
 });
 
 const nextConfig = withPWA({
-  reactStrictMode: true,
+  reactStrictMode: false, // 👈 DISABLING THIS TO AVOID DOUBLE RENDER
 });
 
 module.exports = nextConfig;
