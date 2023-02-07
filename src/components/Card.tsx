@@ -9,7 +9,7 @@ function Card({ count }: cat.Count): JSX.Element {
   useEffect(() => {
     (async () => {
       const getFacts = await factsApi(count);
-      setFacts(getFacts.data);
+      setFacts(getFacts);
     })();
   }, [count]);
 

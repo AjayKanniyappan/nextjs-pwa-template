@@ -18,7 +18,7 @@ async function factsApi(count: string) {
       },
     );
     if (status === 200) {
-      return data;
+      return data.data;
     }
     throw new Error('An unexpected error occurred');
   } catch (error) {
