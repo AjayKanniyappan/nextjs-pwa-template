@@ -9,12 +9,11 @@ declare namespace cat {
   type Facts = {
     data: readonly string[];
   };
+  type FactImage = { id: string; url: string; width: number; height: number };
+  type Headers = Readonly<Record<string, string | boolean>>;
+  type Images = { id: string; url: string; width: number; height: number }[];
   type Navbar = { id: number; label: string; href: string }[];
   type Url = string;
-
-  interface GetFactsResponse {
-    data: Facts;
-  }
 
   interface PageProps {
     title: string;

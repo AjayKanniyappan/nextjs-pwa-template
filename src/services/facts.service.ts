@@ -1,32 +1,24 @@
-import axios from 'axios';
+import ApiClient from '@services/ApiClient';
 import { FACTS_API_URL } from '@constants/index';
 
+const headers: cat.Headers = {
+  Accept: 'application/json',
+  'Content-Type': 'application/json; charset=utf-8',
+};
+
 /**
- * It makes a request to the cat facts API, and returns the response data if the request is successful,
- * or an error message if it's not
- * @param {string} count - The number of facts to return.
- * @returns A function that returns a promise that resolves to a string or an object.
+ * It makes a GET request to the Cat Facts API, and returns the response data if the request is
+ * successful
+ * @param {string} path - The path to the facts API endpoint.
+ * @returns A function that returns a promise that resolves to a cat.Facts object.
  */
-async function factsApi(count: string) {
-  try {
-    const { data, status } = await axios.get<cat.GetFactsResponse>(
-      `${FACTS_API_URL}/?count=${count}`,
-      {
-        headers: {
-          Accept: 'application/json',
-        },
-      },
-    );
-    if (status === 200) {
-      return data.data;
-    }
-    throw new Error('An unexpected error occurred');
-  } catch (error) {
-    if (axios.isAxiosError(error)) {
-      return error.message;
-    }
-    return 'An unexpected error occurred';
+async function getFacts(path: string): Promise<cat.Facts> {
+  const api = new ApiClient(FACTS_API_URL, headers);
+  const { data, status } = await api.get(path);
+  if (status === 200) {
+    return data;
   }
+  throw new Error('An unexpected error occurred');
 }
 
-export default factsApi;
+export default getFacts;
