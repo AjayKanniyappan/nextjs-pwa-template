@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getImages } from '@services/index';
-import { factImage } from '@common/data';
+import { factImage } from '@/common/content';
 
 /**
  * It fetches a random image from thecatapi.com and displays it

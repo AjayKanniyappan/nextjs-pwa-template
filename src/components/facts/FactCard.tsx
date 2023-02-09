@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getFacts } from '@services/index';
-import { facts } from '@common/data';
+import { facts } from '@/common/content';
 import RandomImage from './RandomImage';
 
 function FactCard({ count }: cat.Count): JSX.Element {

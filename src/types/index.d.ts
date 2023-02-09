@@ -26,6 +26,12 @@ declare namespace cat {
     children: React.ReactNode;
   }
 
+  interface Toaster {
+    message: string;
+    show: boolean;
+    type: string;
+  }
+
   interface Svg {
     className?: string;
   }
