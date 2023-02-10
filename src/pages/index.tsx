@@ -1,11 +1,12 @@
 import Page from '@layouts/Page';
 import Section from '@layouts/Section';
+import { Home } from '@components/index';
 
-export default function Home(): JSX.Element {
+export default function main(): JSX.Element {
   return (
     <Page title="Home">
       <Section>
-        <h1>Hello</h1>
+        <Home />
       </Section>
     </Page>
   );

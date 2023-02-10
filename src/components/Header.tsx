@@ -12,7 +12,7 @@ function Header(): JSX.Element {
       <div className="hidden sm:block">
         <div className="h-16">
           <Link href="/">
-            <CatLogoSvg />
+            <CatLogoSvg className="w-full h-full" />
           </Link>
         </div>
       </div>
@@ -22,7 +22,7 @@ function Header(): JSX.Element {
       <div className="sm:hidden justify-end">
         <div className="h-16 dark:hover:text-[#fff9d9]">
           <Link href="/" aria-label="Cat">
-            <CatLogoSvg />
+            <CatLogoSvg className="w-full h-full" />
           </Link>
         </div>
       </div>

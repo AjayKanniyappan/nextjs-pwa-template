@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getFacts } from '@services/index';
-import { facts } from '@/common/content';
+import { facts } from '@common/content';
 import RandomImage from './RandomImage';
+import Toaster from '../Toasts';
 
 function FactCard({ count }: cat.Count): JSX.Element {
   const [randomFact, setRandomFact] = useState<cat.Facts>(facts);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isError, setIsError] = useState<boolean>(false);
 
   useEffect(() => {
@@ -39,6 +39,12 @@ function FactCard({ count }: cat.Count): JSX.Element {
           </ul>
         </div>
       </div>
+      <Toaster
+        toast={isError}
+        setToast={setIsError}
+        message="Error to fetch facts"
+        type="danger-toast"
+      />
     </div>
   );
 }

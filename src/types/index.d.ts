@@ -28,7 +28,8 @@ declare namespace cat {
 
   interface Toaster {
     message: string;
-    show: boolean;
+    setToast: (toast: boolean) => void;
+    toast: boolean;
     type: string;
   }
 

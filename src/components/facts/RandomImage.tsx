@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getImages } from '@services/index';
 import { factImage } from '@/common/content';
+import Toaster from '../Toasts';
 
 /**
  * It fetches a random image from thecatapi.com and displays it
@@ -10,7 +11,6 @@ import { factImage } from '@/common/content';
  */
 function RandomImage({ count }: cat.Count): JSX.Element {
   const [image, setImage] = useState<cat.FactImage>(factImage);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isError, setIsError] = useState<boolean>(false);
 
   useEffect(() => {
@@ -26,14 +26,24 @@ function RandomImage({ count }: cat.Count): JSX.Element {
   }, [count]);
 
   return (
-    <Image
-      className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-      src={image.url}
-      alt="Cat pictures"
-      height={200}
-      width={200}
-      unoptimized
-    />
+    <>
+      <Image
+        className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+        src={image.url}
+        alt="Cat pictures"
+        height={200}
+        width={200}
+        unoptimized
+      />
+      <span>
+        <Toaster
+          toast={isError}
+          setToast={setIsError}
+          message="Error to fetch Images"
+          type="danger-toast"
+        />
+      </span>
+    </>
   );
 }
 
