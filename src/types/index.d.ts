@@ -12,7 +12,7 @@ declare namespace cat {
   type FactImage = { id: string; url: string; width: number; height: number };
   type Headers = Readonly<Record<string, string | boolean>>;
   type Images = { id: string; url: string; width: number; height: number }[];
-  type Navbar = { id: number; label: string; href: string }[];
+  type Navbar = { id: number; label: string; href: string; external: boolean }[];
   type Url = string;
 
   interface PageProps {

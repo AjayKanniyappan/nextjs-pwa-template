@@ -9,7 +9,7 @@ import NavBar from '@components/NavBar';
 function Header(): JSX.Element {
   return (
     <header className="sticky h-16 top-0 flex items-center justify-between px-8 py-02 rounded-b-2xl border-b bg-[#F3EFE0] dark:bg-[#18181b] dark:border-[#393941]">
-      <div className="hidden sm:block">
+      <div className="hidden sm:block lg:ml-36">
         <div className="h-16">
           <Link href="/">
             <CatLogoSvg className="w-full h-full" />
