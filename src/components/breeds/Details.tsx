@@ -10,7 +10,7 @@ function Details({ currentBreed }: cat.DetailsProps) {
       <span className="flex items-center pt-3 text-xs font-medium tracking-widest uppercase dark:text-violet-400">
         <Image
           className="mr-2"
-          src={`${FLAGS_URL}${currentBreed.country_code.toLocaleLowerCase()}.svg`}
+          src={`${FLAGS_URL}/${currentBreed.country_code.toLocaleLowerCase()}.svg`}
           alt={currentBreed.country_code}
           width={20}
           height={20}

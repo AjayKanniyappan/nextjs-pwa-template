@@ -87,6 +87,7 @@ declare namespace cat {
   type Facts = {
     data: readonly string[];
   };
+  type BreedImages = { id: string; url: string; width: number; height: number }[];
   type FactImage = { id: string; url: string; width: number; height: number };
   type Headers = Readonly<Record<string, string | boolean>>;
   type Images = { id: string; url: string; width: number; height: number }[];
@@ -96,6 +97,10 @@ declare namespace cat {
     imperial: string;
     metric: string;
   };
+
+  interface CarouselProps {
+    currentBreed: string;
+  }
 
   interface DetailsProps {
     currentBreed: Breed;

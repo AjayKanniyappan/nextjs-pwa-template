@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getBreeds } from '@services/index';
 import { randomBreed } from '@common/content';
 import randomNumber from '@utils/randomNumber';
+import Carousel from './Carousel';
 import Details from './Details';
 import Select from './Select';
 import Toaster from '../Toasts';
@@ -42,6 +43,7 @@ function BreedCard(): JSX.Element {
           </option>
         ))}
       </Select>
+      <Carousel currentBreed={breed[number].id} />
       <Details currentBreed={breed[number]} />
       <Toaster
         toast={isError}
