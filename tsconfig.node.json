@@ -10,7 +10,8 @@
       "@layouts/*": ["./src/layouts/*"],
       "@services/*": ["./src/services/*"],
       "@styles/*": ["./src/styles/*"],
-      "@svg/*": ["./src/svg/*"]
+      "@svg/*": ["./src/svg/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": [

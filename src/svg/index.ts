@@ -7,6 +7,8 @@ import CrossSvg from '@svg/CrossSvg';
 import ExternalSvg from '@svg/ExternalSvg';
 import FactSvg from '@svg/FactSvg';
 import HomeSvg from '@svg/HomeSvg';
+import StarSvg from '@svg/StarSvg';
+import WikipediaSvg from '@svg/WikipediaSvg';
 
 /* Exporting the svg files from the svg folder. */
 export {
@@ -19,4 +21,6 @@ export {
   ExternalSvg,
   FactSvg,
   HomeSvg,
+  StarSvg,
+  WikipediaSvg,
 };
