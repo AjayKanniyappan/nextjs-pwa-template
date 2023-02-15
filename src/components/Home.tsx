@@ -2,13 +2,18 @@ import Link from 'next/link';
 import { DOCS_URL } from '@constants/index';
 
 function Home(): JSX.Element {
+  /* eslint-disable no-console */
+  console.log('%cHi There👋, Im Ajay👨‍💻', 'font-size: 25px;');
+  console.log(`%cCheck out my code here: ${DOCS_URL}`, 'font-size:15px');
+  console.log('%cAs long as you are winning it is a good day🎯', 'font-size: 20px;');
+
   return (
     <div className="container py-24 px-10 mx-0 min-w-full flex flex-col items-center">
       <h1 className="text-5xl py-6 text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black md:text-6xl mt-14">
         The Next.js Progressive Web App Template
       </h1>
       <br />
-      <h2 className="text-center text-xl text-[#888]">
+      <h2 className="text-center text-xl font-mono">
         A Complete Foundation for Building Robust PWA Apps
       </h2>
       <br />

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { getImages } from '@services/index';
 import { sliderImages } from '@common/content';
 import style from '@styles/Carousel.module.css';
+import useDeviceSize from '@/hooks/useDeviceSize';
 import Toaster from '../Toasts';
 
 function Carousel({ currentBreed }: cat.CarouselProps) {
@@ -12,6 +13,7 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const [isError, setIsError] = useState<boolean>(false);
+  const deviceSize = useDeviceSize(640);
 
   const carouselInfiniteScroll = () => {
     if (currentImage === images.length - 1) {
@@ -36,7 +38,7 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (!paused) {
+      if (!paused && !deviceSize) {
         carouselInfiniteScroll();
       }
     }, 5000);
@@ -126,7 +128,7 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
             onClick={prevSlide}
             aria-hidden="true"
           >
-            <span className={style.arrow}>&#11164;</span>
+            <span className={style.arrow}>&#10094;</span>
           </button>
           <button
             type="button"
@@ -134,7 +136,7 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
             onClick={nextSlide}
             aria-hidden="true"
           >
-            <span className={style.arrow}>&#11166;</span>
+            <span className={style.arrow}>&#10095;</span>
           </button>
         </div>
       </div>
