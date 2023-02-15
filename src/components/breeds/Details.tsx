@@ -9,9 +9,9 @@ function Details({ currentBreed }: cat.DetailsProps) {
     <div className="space-y-6 space-x-6">
       <span className="flex items-center pt-3 text-xs font-medium tracking-widest uppercase dark:text-violet-400">
         <Image
-          className="mr-2"
-          src={`${FLAGS_URL}/${currentBreed.country_code.toLocaleLowerCase()}.svg`}
-          alt={currentBreed.country_code}
+          className="mr-2 rounded-lg"
+          src={`${FLAGS_URL}/${currentBreed?.country_code.toLocaleLowerCase()}.svg`}
+          alt={currentBreed?.country_code}
           width={20}
           height={20}
           unoptimized
@@ -23,48 +23,99 @@ function Details({ currentBreed }: cat.DetailsProps) {
           {currentBreed?.name}
         </h3>
       </div>
-      <p className="list-outside list-disc dark:text-gray-200">{currentBreed?.description}</p>
-      <hr />
-      <p className="list-outside list-disc dark:text-gray-200">{currentBreed?.temperament}</p>
-      <p className="text-white">Adaptability</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.adaptability} />
+      <blockquote className="text-lg italic font-medium text-center text-gray-900 dark:text-gray-200">
+        <p>&quot;{currentBreed?.description}&quot;</p>
+      </blockquote>
+      <div className="relative flex items-center">
+        <div className="flex-grow mx-24 border-t border-gray-900 dark:border-gray-300" />
       </div>
-      <p className="text-white">Affection Level</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.affection_level} />
+      <div className="flex justify-center font-mono dark:text-gray-200">
+        <p>{currentBreed?.temperament}</p>
       </div>
-      <p className="text-white">Child Friendly</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.child_friendly} />
+      <div className="py-3 space-y-4 italic font-medium">
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Adaptability</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.adaptability} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Affection Level</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.affection_level} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Child Friendly</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.child_friendly} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Dog Friendly</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.dog_friendly} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Energy Level</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.energy_level} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Grooming</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.grooming} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Health Issues</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.health_issues} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Intelligence</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.intelligence} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Shedding Level</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.shedding_level} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Social Needs</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.social_needs} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Stranger Friendly</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.stranger_friendly} />
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <p className="text-black dark:text-white">Vocalisation</p>
+          <div className="flex items-center">
+            <Ratings count={currentBreed?.vocalisation} />
+          </div>
+        </div>
       </div>
-      <p className="text-white">Dog Friendly</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.dog_friendly} />
+      <div className="flex justify-center">
+        <Link
+          href={currentBreed?.wikipedia_url}
+          target="_blank"
+          className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-8 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2"
+        >
+          <WikipediaSvg className="w-5 h-5" />
+          ikipedia
+        </Link>
       </div>
-      <p className="text-white">Energy Level</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.energy_level} />
-      </div>
-      <p className="text-white">Grooming</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.grooming} />
-      </div>
-      <p className="text-white">Health Issues</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.health_issues} />
-      </div>
-      <p className="text-white">Energy Level</p>
-      <div className="flex items-center">
-        <Ratings count={currentBreed.energy_level} />
-      </div>
-      <Link
-        href="/"
-        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        <WikipediaSvg className="w-4 h-4 ml-2 -mr-1 fill-white" />
-        Read more
-      </Link>
     </div>
   );
 }

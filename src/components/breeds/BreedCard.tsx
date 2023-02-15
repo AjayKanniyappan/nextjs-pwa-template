@@ -35,7 +35,7 @@ function BreedCard(): JSX.Element {
   };
 
   return (
-    <div className="my-12 p-4 max-w-xs rounded-xl shadow-2xl bg-[#f9f7f3] dark:bg-[#212121] dark:border-[#393941] dark:text-[#434242] md:max-w-lg lg:max-w-xl">
+    <div className="my-8 mb-20 p-4 max-w-xs rounded-xl shadow-2xl bg-[#f9f7f3] dark:bg-[#212121] dark:border-[#393941] dark:text-[#434242] md:max-w-lg lg:max-w-xl">
       <Select type="breeds" selected={breed[number]?.id} selectOnChange={handleSelectChange}>
         {breed?.map((snap) => (
           <option key={snap.id} value={snap.id}>

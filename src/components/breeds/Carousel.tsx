@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { getImages } from '@services/index';
 import { sliderImages } from '@common/content';
+import style from '@styles/Carousel.module.css';
 import Toaster from '../Toasts';
 
 function Carousel({ currentBreed }: cat.CarouselProps) {
@@ -81,29 +82,22 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
     <>
       <div className="my-4">
         <div
-          className="max-w-lg h-72 flex overflow-hidden relative"
+          className="h-72 flex overflow-hidden relative"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           onTouchMove={handleTouchMove}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
-          <i
-            className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
-            onClick={prevSlide}
-            aria-hidden="true"
-          >
-            &#8249;
-          </i>
-          <div className="rounded-lg">
+          <div className="relative w-full h-auto">
             {images?.map((img, index) => (
               <Image
-                className={index === currentImage ? 'block w-full h-auto object-cover' : 'hidden'}
+                className={`rounded-lg ${index === currentImage ? 'block object-cover' : 'hidden'}`}
                 key={img?.id}
                 src={img?.url}
                 alt={img?.id}
-                width={200}
-                height={200}
+                priority={index === currentImage}
+                fill
                 unoptimized
               />
             ))}
@@ -126,13 +120,22 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
               );
             })}
           </div>
-          <i
-            className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+          <button
+            type="button"
+            className="absolute left-0 text-1xl inset-y-1/3 text-white cursor-pointer ml-1"
+            onClick={prevSlide}
+            aria-hidden="true"
+          >
+            <span className={style.arrow}>&#11164;</span>
+          </button>
+          <button
+            type="button"
+            className="absolute right-0 text-1xl inset-y-1/3 text-white cursor-pointer mr-1"
             onClick={nextSlide}
             aria-hidden="true"
           >
-            &#8250;
-          </i>
+            <span className={style.arrow}>&#11166;</span>
+          </button>
         </div>
       </div>
       <Toaster

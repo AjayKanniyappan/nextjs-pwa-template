@@ -1,0 +1,9 @@
+.arrow {
+  background: rgba(0, 0, 0, 0.3);
+  @apply flex h-8 w-8 items-center justify-center
+    rounded-full;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.87);
+}
