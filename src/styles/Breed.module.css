@@ -1,0 +1,59 @@
+.container {
+  @apply my-8 mb-20 p-4 max-w-xs rounded-xl shadow-2xl bg-[#f9f7f3] dark:bg-[#212121] dark:border-[#393941] dark:text-[#434242] md:max-w-lg lg:max-w-xl;
+}
+
+.details {
+  @apply space-y-6 space-x-6;
+}
+
+.center {
+  @apply flex justify-center;
+}
+
+.space {
+  @apply flex justify-between;
+}
+
+.country {
+  @apply flex items-center pt-3 text-xs font-medium tracking-widest uppercase dark:text-violet-400;
+}
+
+.rating {
+  @apply text-black dark:text-white;
+}
+
+.breedName {
+  @apply text-xl text-center font-semibold dark:text-violet-400;
+}
+
+.description {
+  @apply text-lg italic font-medium text-center text-gray-900 dark:text-gray-200;
+}
+
+.hr {
+  @apply flex-grow mx-24 border-t border-gray-900 dark:border-gray-300;
+}
+
+.hrBox {
+  @apply relative flex items-center;
+}
+
+.font {
+  @apply flex justify-center font-mono dark:text-gray-200;
+}
+
+.rateCard {
+  @apply py-3 space-y-4 italic font-medium;
+}
+
+.label {
+  @apply block mb-2 text-base font-medium text-gray-900 dark:text-gray-400;
+}
+
+.select {
+  @apply appearance-none block py-3 px-4 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#18181b] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.wiki {
+  @apply text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-8 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2;
+}

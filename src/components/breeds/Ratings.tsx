@@ -1,5 +1,11 @@
 import { StarSvg } from '@svg/index';
 
+/**
+ * It's a React component that takes a count prop and returns a JSX element.
+ * function Ratings({ count }: cat.RatingsProps): JSX
+ * @param  - cat.RatingsProps
+ * @returns An array of StarSvg components.
+ */
 function Ratings({ count }: cat.RatingsProps): JSX.Element {
   return (
     <>

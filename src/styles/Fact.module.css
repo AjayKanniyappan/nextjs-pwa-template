@@ -1,0 +1,19 @@
+.container {
+  @apply my-8 mb-20 max-w-xs p-4 rounded-xl shadow-2xl bg-[#f9f7f3] dark:bg-[#212121] dark:border-[#393941] dark:text-[#434242] md:max-w-lg lg:max-w-xl;
+}
+
+.box {
+  @apply space-y-6 space-x-6;
+}
+
+.heading {
+  @apply text-xl text-center font-semibold dark:text-violet-400;
+}
+
+.list {
+  @apply list-outside list-disc dark:text-gray-200;
+}
+
+.image {
+  @apply block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500;
+}

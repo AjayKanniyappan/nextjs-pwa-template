@@ -2,11 +2,15 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { getImages } from '@services/index';
 import { sliderImages } from '@common/content';
-import style from '@styles/Carousel.module.css';
-import useDeviceSize from '@/hooks/useDeviceSize';
+import styles from '@styles/Carousel.module.css';
+import useDeviceSize from '@hooks/useDeviceSize';
 import Toaster from '../Toasts';
 
-function Carousel({ currentBreed }: cat.CarouselProps) {
+/**
+ * It's a React component that renders a carousel of images
+ * @param event - The event object
+ */
+function Carousel({ currentBreed }: cat.CarouselProps): JSX.Element {
   const [images, setImages] = useState<cat.BreedImages>(sliderImages);
   const [currentImage, setCurrentImage] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -82,63 +86,47 @@ function Carousel({ currentBreed }: cat.CarouselProps) {
 
   return (
     <>
-      <div className="my-4">
-        <div
-          className="h-72 flex overflow-hidden relative"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-          onTouchMove={handleTouchMove}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
-          <div className="relative w-full h-auto">
-            {images?.map((img, index) => (
-              <Image
-                className={`rounded-lg ${index === currentImage ? 'block object-cover' : 'hidden'}`}
-                key={img?.id}
-                src={img?.url}
-                alt={img?.id}
-                priority={index === currentImage}
-                fill
-                unoptimized
-              />
-            ))}
-          </div>
-          <div className="absolute w-full flex justify-center bottom-0">
-            {images.map((img, index) => {
-              return (
-                <div
-                  key={img.id}
-                  className={
-                    index === currentImage
-                      ? 'h-2 w-2 bg-blue-700 rounded-full mx-2 mb-2 cursor-pointer'
-                      : 'h-2 w-2 bg-white rounded-full mx-2 mb-2 cursor-pointer'
-                  }
-                  onClick={() => {
-                    setCurrentSlide(index);
-                  }}
-                  aria-hidden="true"
-                />
-              );
-            })}
-          </div>
-          <button
-            type="button"
-            className="absolute left-0 text-1xl inset-y-1/3 text-white cursor-pointer ml-1"
-            onClick={prevSlide}
-            aria-hidden="true"
-          >
-            <span className={style.arrow}>&#10094;</span>
-          </button>
-          <button
-            type="button"
-            className="absolute right-0 text-1xl inset-y-1/3 text-white cursor-pointer mr-1"
-            onClick={nextSlide}
-            aria-hidden="true"
-          >
-            <span className={style.arrow}>&#10095;</span>
-          </button>
+      <div
+        className={styles.container}
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+        onTouchMove={handleTouchMove}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div className={styles.carousel}>
+          {images?.map((img, index) => (
+            <Image
+              className={`rounded-lg ${index === currentImage ? 'block object-cover' : 'hidden'}`}
+              key={img?.id}
+              src={img?.url}
+              alt={img?.id}
+              priority={index === currentImage}
+              fill
+              unoptimized
+            />
+          ))}
         </div>
+        <div className={styles.dotted}>
+          {images.map((img, index) => {
+            return (
+              <div
+                key={img.id}
+                className={index === currentImage ? styles.primary : styles.secondary}
+                onClick={() => {
+                  setCurrentSlide(index);
+                }}
+                aria-hidden="true"
+              />
+            );
+          })}
+        </div>
+        <button type="button" className={styles.back} onClick={prevSlide}>
+          <span className={styles.arrow}>&#10094;</span>
+        </button>
+        <button type="button" className={styles.next} onClick={nextSlide}>
+          <span className={styles.arrow}>&#10095;</span>
+        </button>
       </div>
       <Toaster
         toast={isError}

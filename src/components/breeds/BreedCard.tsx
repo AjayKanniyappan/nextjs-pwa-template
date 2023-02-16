@@ -2,11 +2,16 @@ import { useEffect, useState } from 'react';
 import { getBreeds } from '@services/index';
 import { randomBreed } from '@common/content';
 import randomNumber from '@utils/randomNumber';
+import styles from '@styles/Breed.module.css';
 import Carousel from './Carousel';
 import Details from './Details';
 import Select from './Select';
 import Toaster from '../Toasts';
 
+/**
+ * BreedCard is a function that returns a JSX element.
+ * @returns A JSX.Element
+ */
 function BreedCard(): JSX.Element {
   const [breed, setBreed] = useState<cat.Breeds>(randomBreed);
   const [number, setNumber] = useState<number>(0);
@@ -35,7 +40,7 @@ function BreedCard(): JSX.Element {
   };
 
   return (
-    <div className="my-8 mb-20 p-4 max-w-xs rounded-xl shadow-2xl bg-[#f9f7f3] dark:bg-[#212121] dark:border-[#393941] dark:text-[#434242] md:max-w-lg lg:max-w-xl">
+    <div className={styles.container}>
       <Select type="breeds" selected={breed[number]?.id} selectOnChange={handleSelectChange}>
         {breed?.map((snap) => (
           <option key={snap.id} value={snap.id}>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getImages } from '@services/index';
 import { factImage } from '@/common/content';
+import styles from '@styles/Fact.module.css';
 import Toaster from '../Toasts';
 
 /**
@@ -28,7 +29,7 @@ function RandomImage({ count }: cat.Count): JSX.Element {
   return (
     <>
       <Image
-        className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+        className={styles.image}
         src={image.url}
         alt="Cat pictures"
         height={200}

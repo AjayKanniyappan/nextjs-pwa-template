@@ -2,12 +2,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FLAGS_URL } from '@constants/index';
 import { WikipediaSvg } from '@svg/index';
+import styles from '@styles/Breed.module.css';
 import Ratings from './Ratings';
 
-function Details({ currentBreed }: cat.DetailsProps) {
+/**
+ * It returns a JSX element that displays the details of the current breed
+ * @param  - cat.DetailsProps
+ * @returns JSX.Element
+ */
+function Details({ currentBreed }: cat.DetailsProps): JSX.Element {
   return (
-    <div className="space-y-6 space-x-6">
-      <span className="flex items-center pt-3 text-xs font-medium tracking-widest uppercase dark:text-violet-400">
+    <div className={styles.details}>
+      <span className={styles.country}>
         <Image
           className="mr-2 rounded-lg"
           src={`${FLAGS_URL}/${currentBreed?.country_code.toLocaleLowerCase()}.svg`}
@@ -19,102 +25,96 @@ function Details({ currentBreed }: cat.DetailsProps) {
         {currentBreed?.origin}
       </span>
       <div>
-        <h3 className="text-xl text-center font-semibold dark:text-violet-400">
-          {currentBreed?.name}
-        </h3>
+        <h3 className={styles.breedName}>{currentBreed?.name}</h3>
       </div>
-      <blockquote className="text-lg italic font-medium text-center text-gray-900 dark:text-gray-200">
+      <blockquote className={styles.description}>
         <p>&quot;{currentBreed?.description}&quot;</p>
       </blockquote>
-      <div className="relative flex items-center">
-        <div className="flex-grow mx-24 border-t border-gray-900 dark:border-gray-300" />
+      <div className={styles.hrBox}>
+        <div className={styles.hr} />
       </div>
-      <div className="flex justify-center font-mono dark:text-gray-200">
+      <div className={styles.font}>
         <p>{`Average life span ${currentBreed?.life_span} years`}</p>
       </div>
-      <div className="flex justify-center font-mono dark:text-gray-200">
+      <div className={styles.font}>
         <p>{currentBreed?.temperament}</p>
       </div>
-      <div className="py-3 space-y-4 italic font-medium">
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Adaptability</p>
-          <div className="flex items-center">
+      <div className={styles.rateCard}>
+        <div className={styles.space}>
+          <p className={styles.rating}>Adaptability</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.adaptability} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Affection Level</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Affection Level</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.affection_level} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Child Friendly</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Child Friendly</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.child_friendly} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Dog Friendly</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Dog Friendly</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.dog_friendly} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Energy Level</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Energy Level</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.energy_level} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Grooming</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Grooming</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.grooming} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Health Issues</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Health Issues</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.health_issues} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Intelligence</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Intelligence</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.intelligence} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Shedding Level</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Shedding Level</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.shedding_level} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Social Needs</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Social Needs</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.social_needs} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Stranger Friendly</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Stranger Friendly</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.stranger_friendly} />
           </div>
         </div>
-        <div className="flex justify-between">
-          <p className="text-black dark:text-white">Vocalisation</p>
-          <div className="flex items-center">
+        <div className={styles.space}>
+          <p className={styles.rating}>Vocalisation</p>
+          <div className={styles.center}>
             <Ratings count={currentBreed?.vocalisation} />
           </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        <Link
-          href={currentBreed?.wikipedia_url}
-          target="_blank"
-          className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-8 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2"
-        >
+      <div className={styles.center}>
+        <Link href={currentBreed?.wikipedia_url} target="_blank" className={styles.wiki}>
           <WikipediaSvg className="w-5 h-5" />
           ikipedia
         </Link>

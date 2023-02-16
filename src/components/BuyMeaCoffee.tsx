@@ -7,7 +7,7 @@ import styles from '@styles/Bmc.module.css';
  * It renders a link to my Buy Me a Coffee page, with a coffee cup SVG inside it
  * @returns A div with a link to buy me a coffee.
  */
-function BuyMeaCoffee() {
+function BuyMeaCoffee(): JSX.Element {
   return (
     <div className={styles.container}>
       <Link href={AJAY_URL} title="Buy me a coffee" target="_blank" rel="noreferrer">
