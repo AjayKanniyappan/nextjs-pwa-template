@@ -1,0 +1,7 @@
+.container {
+  @apply flex items-end justify-end fixed bottom-0 right-0 mb-16 animate-bounce mr-4 z-10;
+}
+
+.btn {
+  @apply transition-all rounded-full w-14 hover:shadow-sm shadow-lg ring hover:ring-4 -rotate-45 ring-white sm:-rotate-0 sm:hover:-rotate-45;
+}

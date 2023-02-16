@@ -30,6 +30,9 @@ function Details({ currentBreed }: cat.DetailsProps) {
         <div className="flex-grow mx-24 border-t border-gray-900 dark:border-gray-300" />
       </div>
       <div className="flex justify-center font-mono dark:text-gray-200">
+        <p>{`Average life span ${currentBreed?.life_span} years`}</p>
+      </div>
+      <div className="flex justify-center font-mono dark:text-gray-200">
         <p>{currentBreed?.temperament}</p>
       </div>
       <div className="py-3 space-y-4 italic font-medium">

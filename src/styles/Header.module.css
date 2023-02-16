@@ -1,0 +1,19 @@
+.container {
+  @apply sticky h-16 top-0 z-50 flex items-center justify-between px-8 py-2 rounded-b-2xl border-b bg-[#F3EFE0] dark:bg-[#18181b] dark:border-[#393941];
+}
+
+.logo {
+  @apply hidden sm:block lg:ml-36;
+}
+
+.name {
+  @apply mr-auto font-semibold text-xl;
+}
+
+.small {
+  @apply sm:hidden justify-end;
+}
+
+.smallCat {
+  @apply h-16 dark:hover:text-[#fff9d9];
+}

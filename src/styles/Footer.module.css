@@ -1,0 +1,19 @@
+.container {
+  @apply hidden sm:block;
+}
+
+.footer {
+  @apply fixed bottom-0 w-full border-t dark:bg-[#18181b] dark:border-[#393941];
+}
+
+.box {
+  @apply py-4 text-center;
+}
+
+.paragraph {
+  @apply text-lg font-bold text-zinc-800 hover:text-[#000000] dark:text-[#E8E2E2] dark:hover:text-[#F5F5F5];
+}
+
+.link {
+  @apply underline hover:underline-offset-2;
+}

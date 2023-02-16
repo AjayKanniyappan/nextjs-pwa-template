@@ -1,0 +1,27 @@
+.container {
+  @apply w-full h-screen flex flex-col items-center justify-center;
+}
+
+.imageContainer {
+  @apply w-7/12 md:w-4/12 lg:w-3/12;
+}
+
+.text {
+  @apply text-5xl font-bold;
+}
+
+.content {
+  @apply flex flex-col items-center justify-center;
+}
+
+.bigText {
+  @apply text-3xl md:text-4xl lg:text-5xl text-gray-800 dark:text-[#f2f2f2] mt-8;
+}
+
+.paragraph {
+  @apply md:text-lg lg:text-xl text-gray-600 dark:text-[#cccccc] mt-8;
+}
+
+.btn {
+  @apply flex items-center space-x-2 bg-[#0099ff] hover:bg-[#0087ff] text-gray-100 px-4 py-2 mt-12 rounded transition duration-150;
+}

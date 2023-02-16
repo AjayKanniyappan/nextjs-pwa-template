@@ -5,7 +5,7 @@
  * @param {number} max - The maximum number that can be returned.
  * @returns A random number between the min and max values.
  */
-function randomNumber(min: number, max: number) {
+function randomNumber(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 

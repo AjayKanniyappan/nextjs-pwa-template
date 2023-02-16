@@ -1,0 +1,27 @@
+.container {
+  @apply sm:hidden;
+}
+
+.navigation {
+  @apply fixed bottom-0 w-full rounded-t-2xl bg-[#f4f4f5] border-t dark:bg-[#18181b] dark:border-[#393941];
+}
+
+.navBox {
+  @apply mx-auto h-16 max-w-md flex items-center justify-around px-6;
+}
+
+.link {
+  @apply flex h-full w-full flex-col items-center justify-center space-y-1;
+}
+
+.primary {
+  @apply dark:text-[#fff9d9] text-[#0099FF];
+}
+
+.secondary {
+  @apply dark:text-[#99A8B2] dark:hover:text-[#FEFBF6] text-[#3C4048] hover:text-[#F2DF3A];
+}
+
+.linkName {
+  @apply text-xs text-[#000] dark:text-[#FEFBF6];
+}

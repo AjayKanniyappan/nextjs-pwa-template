@@ -1,0 +1,23 @@
+.container {
+  @apply hidden sm:block justify-end;
+}
+
+.nav {
+  @apply text-lg;
+}
+
+.list {
+  @apply flex items-center m-12 mr-8 font-medium space-x-8 lg:mr-44;
+}
+
+.primary {
+  @apply text-[#0099FF] dark:text-[#E6DDC4];
+}
+
+.secondary {
+  @apply text-zinc-600 hover:text-[#000000] dark:text-zinc-400 dark:hover:text-zinc-50;
+}
+
+.external {
+  @apply ml-1 mb-1 inline;
+}

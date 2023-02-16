@@ -7,9 +7,9 @@ const headers: cat.Headers = {
 };
 
 /**
- * It makes a GET request to the Cat API, and returns the response data if the request is successful
- * @param {string} path - string - The path to the API endpoint.
- * @returns A promise that resolves to an array of cat breeds.
+ * It returns a promise that resolves to an object of type `cat.Breeds` or rejects with an error
+ * @param {string} path - string - the path to the API endpoint
+ * @returns A promise that resolves to an object of type cat.Breeds.
  */
 async function getBreeds(path: string): Promise<cat.Breeds> {
   const api = new ApiClient(BREEDS_API_URL, headers);
