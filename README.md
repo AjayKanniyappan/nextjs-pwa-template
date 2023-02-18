@@ -8,11 +8,11 @@
 </h2>
  
 <p align="center">
-   <a href="https://github.com/AjayKanniyappan/react-electron-template#readme" target="_blank">
+   <a href="https://github.com/AjayKanniyappan/nextjs-pwa-template#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/Documentation-yes-brightgreen.svg" />
   </a>
    <img alt="Version" src="https://img.shields.io/badge/Version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/AjayKanniyappan/react-electron-template/blob/main/LICENSE" target="_blank">
+  <a href="https://github.com/AjayKanniyappan/nextjs-pwa-template/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 	<a href="https://web.dev/measure">
@@ -51,13 +51,24 @@ NOTE: This project requires NodeJS (version 14 or later) and NPM.
 
 ## ⏩ Table of contents
 
-- [Homepage](#-homepage)
+- [Homepage](#--homepage)
 - [Before You Begin](#-before-you-begin)
 - [Prerequisites](#%EF%B8%8F-prerequisites)
 - [Table of contents](#-table-of-contents)
 - [Features](#-features)
 - [Getting Started](#%EF%B8%8F-getting-started)
 - [Directory Structure](#-directory-structure)
+- [Quick Start](#-quick-start)
+  - [Cloning The GitHub Repository](#-cloning-the-github-repository)
+  - [Downloading The Repository Zip File](#%EF%B8%8F-downloading-the-repository-zip-file)
+  - [Quick Install](#-quick-install)
+- [Starting Development](#-starting-development)
+  - [Running Your Application](#-running-your-application)
+  - [Change Port Number](#-change-port-number)
+  - [Vscode Debugging](#-vscode-debugging)
+  - [Clean Cache](#-clean-cache)
+  - [Style your Code](#-style-your-code)
+  - [Git Commits](#%EF%B8%8F-git-commits)
 - [Tech Used](#%EF%B8%8F-tech-used)
 - [Contributing](#-contributing)
 - [Show your support](#-show-your-support)
@@ -142,7 +153,7 @@ This will clone the latest version of the Next.js PWA Template repository to a *
 Another way to use the Next.js PWA Template is to download a zip copy from the [main branch on GitHub](https://github.com/AjayKanniyappan/nextjs-pwa-template/archive/refs/heads/main.zip). You can also do this using the `wget` command:
 
 ```sh
-wget https://github.com/AjayKanniyappan/nextjs-pwa-template/archive/refs/heads/main.zip -O react-electron-template-main.zip; unzip nextjs-pwa-template-main.zip; rm nextjs-pwa-template-main.zip
+wget https://github.com/AjayKanniyappan/nextjs-pwa-template/archive/refs/heads/main.zip -O nextjs-pwa-template-main.zip; unzip nextjs-pwa-template-main.zip; rm nextjs-pwa-template-main.zip
 ```
 
 Don't forget to rename nextjs-pwa-template-main after your project name.
@@ -175,6 +186,92 @@ This command does a few things:
 ## 👨‍💻 Starting Development
 
 Use your favorite JavaScript Package Managers **npm** or **yarn** or **pnpm**
+
+### 🏃 Running Your Application
+
+**Run your application using npm:**
+
+```sh
+npm run dev
+```
+
+Or if you prefer using Yarn:
+
+```sh
+yarn dev
+```
+
+![image](https://user-images.githubusercontent.com/114384910/219875666-dac53fde-ba9f-4718-9e56-616cf180903a.png)
+
+Your **Next.js** application should run on port 5050 with the development environment configuration, so in your browser just go to http://localhost:5050
+
+That's it! Your application should be running. To proceed with your development, check the other sections in this documentation. If you encounter any problems, Feel free to check [issues page](https://github.com/AjayKanniyappan/nextjs-pwa-template/issues).
+
+### 🛬 Change Port Number
+
+If the localhost 5050 port number already in use! or if you like to change your **Next.js application number.**
+
+Go to 👉 package.json and change the port number 5050 to **your-port-number**
+
+![port](https://user-images.githubusercontent.com/114384910/219876224-ffb8dd05-dd26-49e5-9004-f8581d1a889a.png)
+
+### 🆚 Vscode Debugging
+
+This guide goes over how to start **VSCode debugging** your **Next.js, react** Project.
+
+you can easily debug this [nextjs-pwa-template](https://github.com/AjayKanniyappan/nextjs-pwa-template).
+
+To bring up the Run and Debug view, select the Run and Debug icon in the Activity Bar on the side of VS Code. You can also use the keyboard shortcut `Ctrl+Shift+D`.
+
+![debug](https://user-images.githubusercontent.com/114384910/219876453-b5c3b52e-34a7-454e-8ce8-36dda95e930b.png)
+
+Click the button or press `F5` to start debugging
+
+![server:debug](https://user-images.githubusercontent.com/114384910/219877945-bc135396-5f05-410b-be7b-15cef4a411a1.png)
+
+![client:debug](https://user-images.githubusercontent.com/114384910/219878430-ae89cd03-0f66-4845-9854-12e5320ed523.png)
+
+### 🧹 Clean Cache
+
+If you want clean the cache files and node_modules cache run this below command 👇:
+
+```sh
+npm run clean
+```
+
+NOTE: It will remove your **node_module** folder, **build** files and **env** files.
+
+### 💈 Style your Code
+
+The [Next.js PWA Template](https://github.com/AjayKanniyappan/nextjs-pwa-template) has [Eslint](https://eslint.org/), [Prettier](https://prettier.io/) and [Airbnb](https://airbnb.io/javascript/react/) Configurations, this will help you to Style your code and syntax check and more.
+
+[Eslint](https://eslint.org/) will check syntax, find problems, and enforce code style of your code.
+
+[Prettier](https://prettier.io/) will format your code style.
+
+All you have to do is run this below command 👇:
+
+```sh
+npm run lint
+```
+
+NOTE: This command show you the warnings and errors in your code.
+
+### 🛰️ Git Commits
+
+Automate your [Git](https://git-scm.com/) commits using Husky, and don't commit or push the bad code in git.
+
+Husky improves your commits and more, You can use it to lint your commit messages, run tests, lint code, etc... when you commit or push. Husky supports [all Git hooks](https://git-scm.com/docs/githooks).
+
+Run below command 👇 to prepare Husky:
+
+```sh
+npm run prepare
+```
+
+See docs and more about [Husky](https://typicode.github.io/husky/#/?id=features).
+
+That's it! Your application should be running. To proceed with your development, check the other sections in this documentation. If you encounter any problems, Feel free to check [issues page](https://github.com/AjayKanniyappan/nextjs-pwa-template/issues).
 
 ## 🏗️ Tech Used
 
