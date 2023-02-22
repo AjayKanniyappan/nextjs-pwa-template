@@ -12,7 +12,9 @@ function Home(): JSX.Element {
     <div className={styles.containers}>
       <h1 className={styles.heading}>The Next.js Progressive Web App Template</h1>
       <br />
-      <h2 className={styles.content}>A Complete Foundation for Building Robust PWA Apps</h2>
+      <h2 className={styles.content}>
+        A Solid Foundation for Building Scalable and Efficient Progressive Web Application!
+      </h2>
       <br />
       <div className="mt-10">
         <Link href={DOCS_URL} className={`group ${styles.link}`} target="_blank" rel="noreferrer">
