@@ -34,6 +34,8 @@
 
 - [📖 About the Project](#-about-the-project)
 - [📷 Gallery](#-gallery)
+  - [🖥️ Desktop](#%EF%B8%8F-desktop)
+  - [📱 Mobile](#mobile)
 - [🔍 Features](#-features)
 - [🗼 Lighthouse Performance](#-features)
 - [🛠 Built With](#-built-with)
@@ -52,7 +54,9 @@
   - [🧹 Clean Cache](#-clean-cache)
   - [💈 Style your Code](#-style-your-code)
   - [🛰️ Git Commits](#%EF%B8%8F-git-commits)
-- [🚢 Deploy your own](#-deploy)
+- [🚢 Deploy your own](#-deploy-your-own)
+  - [🔼 Vercel](#-vercel)
+  - [👻 Self-Hosting](#-self-hosting)
 - [🤝 Contributing](#-contributing)
 - [💖 Show your support](#-show-your-support)
 - [☕ Donate](#-donate)
@@ -61,11 +65,49 @@
 
 ## 📖 About the Project
 
-![image](https://user-images.githubusercontent.com/114384910/219875666-dac53fde-ba9f-4718-9e56-616cf180903a.png)
+![image](https://user-images.githubusercontent.com/114384910/220690068-ce4c5e85-7ed6-4782-90cb-ca1c6d74dd85.png)
 
-**Next.js PWA template** 🐾 created by AjayKanniyappan is a starter template that provides a comprehensive setup for building a progressive web app (PWA) using the Next.js framework. This template includes a pre-configured setup for service workers, offline support, and manifest files, making it easy for developers to create a high-performing PWA with minimal setup. The template also includes a basic layout and routing system, along with some basic components and styles, to help developers get started quickly. Additionally, it includes a range of popular libraries and tools, such as Prettier, ESLint, and Tailwind CSS, to ensure that the code is well-formatted and follows best practices. With the help of this template, developers can easily create a fast and reliable PWA that can work seamlessly across all devices.
+**Next.js PWA template** 🐾 is a starter template that provides a comprehensive setup for building a progressive web app (PWA) using the Next.js framework. Don't worry about the configuration 🔨 this template will take care of that, focus on your codes⌨️ and project ideas💡
+
+This template includes a pre-configured setup for service workers, offline support, and manifest files, making it easy for developers to create a high-performing PWA with minimal setup. The template also includes a basic layout and routing system, along with some basic components and styles, to help developers get started quickly. Additionally, it includes a range of popular libraries and tools, such as Prettier, ESLint, and Tailwind CSS, to ensure that the code is well-formatted and follows best practices. With the help of this template, developers can easily create a fast and reliable PWA that can work seamlessly across all devices.
 
 ## 📷 Gallery
+
+<h3 align="center"><b>🖥️ Desktop</b></h3>
+
+🌑 Dark mode
+
+<p align="center">
+  <img alt="Dark" src="https://user-images.githubusercontent.com/114384910/220697501-78dae21e-a975-4f44-bccc-e9360cae8086.png" width="45%">
+&nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://user-images.githubusercontent.com/114384910/220702513-5cbcef63-1f57-44ce-9877-b20b17eef2a3.png" width="45%">
+</p>
+
+🔦 Light mode
+
+<p align="center">
+  <img alt="Light" src="https://user-images.githubusercontent.com/114384910/220698670-404dce66-2242-4aaf-b3ae-81c4d3694dea.png" width="45%">
+&nbsp; &nbsp; &nbsp;
+  <img alt="Light" src="https://user-images.githubusercontent.com/114384910/220704769-e0f4c110-f643-47c7-8400-19c0403d3bca.png" width="45%">
+</p>
+
+<h3 align="center"><b>📱Mobile</b></h3>
+
+🌑 Dark mode
+
+<p align="center">
+  <img alt="Dark" src="https://user-images.githubusercontent.com/114384910/220707485-5ab58dca-238c-4101-ab75-29b4c5c006e9.jpg" width="45%">
+&nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://user-images.githubusercontent.com/114384910/220707462-926a0b05-0366-4e57-a706-479aba6ec295.jpg" width="45%">
+</p>
+
+🔦 Light mode
+
+<p align="center">
+  <img alt="Dark" src="https://user-images.githubusercontent.com/114384910/220707248-b9006934-fc64-48d7-b61f-cbca7ba757fa.jpg" width="45%">
+&nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="https://user-images.githubusercontent.com/114384910/220706912-fe36667a-2927-42bf-9218-fb0a2dc5d52f.jpg" width="45%">
+</p>
 
 ## 🔍 Features
 
@@ -79,6 +121,10 @@
 - 🖥 Build your application for multi-platform
 
 ## 🗼 Lighthouse Performance
+
+The [Next.js PWA Template](https://github.com/AjayKanniyappan/nextjs-pwa-template) achieve a 100% score in Google Lighthouse
+
+![Lighthouse](https://user-images.githubusercontent.com/114384910/220695468-1884ab08-bf56-4cba-8443-21e079c45829.png)
 
 ## 🛠 Built With
 
@@ -109,7 +155,7 @@
 
 ## 🏃‍♂️ Getting Started
 
-These instructions will get you a copy of the [Next.js PWA Template](https://github.com/AjayKanniyappan/nextjs-pwa-template) and running on your local machine for development and testing purposes. See [Deploy](#) for notes on how to lunch your PWA app in live.
+These instructions will get you a copy of the [Next.js PWA Template](https://github.com/AjayKanniyappan/nextjs-pwa-template) and running on your local machine for development and testing purposes. See [Deploy](#-deploy-your-own) for notes on how to lunch your PWA app in live.
 
 ### 📚 Before You Begin
 
@@ -314,6 +360,47 @@ npm run prepare
 See docs and more about [Husky](https://typicode.github.io/husky/#/?id=features).
 
 That's it! Your application should be running. To proceed with your development, check the other sections in this documentation. If you encounter any problems, Feel free to check [issues page](https://github.com/AjayKanniyappan/nextjs-pwa-template/issues).
+
+## 🚢 Deploy your own
+
+Congratulations, you are ready to deploy your [Next.js PWA Template](https://github.com/AjayKanniyappan/nextjs-pwa-template) to production. This document will teach how to deploy vercel or self-hosted.
+
+### 🔼 Vercel
+
+The easiest way to deploy Next.js to production is to use the [Vercel](https://vercel.com/home?utm_source=next-site&utm_medium=banner&utm_campaign=learn_basics_deploying-nextjs-app_deploy) platform developed by the creators of Next.js.
+
+NOTE: If you want to read more about [vercel](https://vercel.com/home?utm_source=next-site&utm_medium=banner&utm_campaign=learn_basics_deploying-nextjs-app_deploy), kindly read this 🙏 [Documentation](https://nextjs.org/learn/basics/deploying-nextjs-app/deploy).
+
+### 👻 Self-Hosting
+
+[Next.js PWA Template](https://github.com/AjayKanniyappan/nextjs-pwa-template) can be deployed to any hosting provider that supports Node.js.
+
+If you’ve followed the instructions so far, your package.json should have the following build and start scripts:
+
+```json
+"scripts": {
+    "build": "next build",
+    "clean": "git clean -dfX",
+    "dev": "next dev -p 5050",
+    "lint": "next lint --fix --max-warnings 0 .",
+    "prepare": "husky install",
+    "start": "next start -p 5050"
+  }
+```
+
+```sh
+npm run build
+```
+
+In your own hosting provider, run the build script once, which builds the production application in the `.next` folder.
+
+After building, the start script starts a Node.js server that supports hybrid pages, serving both statically generated and server-side rendered pages, and API Routes.
+
+```sh
+npm run start
+```
+
+NOTE: If you want to read more about deployment, kindly read this 🙏 [Documentation](https://github.com/vercel/next.js/blob/canary/docs/deployment.md).
 
 ## 🤝 Contributing
 
