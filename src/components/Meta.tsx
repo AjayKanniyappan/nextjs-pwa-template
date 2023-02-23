@@ -41,7 +41,10 @@ function Meta(): JSX.Element {
         property="og:description"
         content="A Solid Foundation for Building Scalable and Efficient Progressive Web Application!"
       />
-      <meta property="og:image" content="/icons/og-image.png" />
+      <meta
+        property="og:image"
+        content="https://nextjs-pwa-template-repo.vercel.app/icons/og-image.png"
+      />
       {/* TWITTER */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@AjayKanniyappan" />
@@ -51,7 +54,10 @@ function Meta(): JSX.Element {
         property="twitter:description"
         content="A Solid Foundation for Building Scalable and Efficient Progressive Web Application!"
       />
-      <meta property="twitter:image" content="/icons/og-image.png" />
+      <meta
+        property="twitter:image"
+        content="https://nextjs-pwa-template-repo.vercel.app/icons/og-image.png"
+      />
     </>
   );
 }
