@@ -10,8 +10,15 @@ function Meta(): JSX.Element {
       <meta name="author" content="Ajay Kanniyappan" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* KEYWORDS */}
-      <meta name="description" content="A simple progressive web app template using Next.js" />
-      <meta name="keywords" content="Next.js, pwa, React, HTML, CSS, JavaScript, TypeScript" />
+      <meta name="title" content="The Next.js Progressive Web App Template" />
+      <meta
+        name="description"
+        content="A Solid Foundation for Building Scalable and Efficient Progressive Web Application!"
+      />
+      <meta
+        name="keywords"
+        content="Next.js, pwa, React, HTML, CSS, JavaScript, TypeScript, cats, facts, breeds"
+      />
       {/* THEMES */}
       <meta name="color-scheme" content="dark light" />
       <meta name="theme-color" content="#F3EFE0" media="(prefers-color-scheme: light)" />
@@ -26,6 +33,25 @@ function Meta(): JSX.Element {
       <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
       <link rel="manifest" href="/manifest.json" />
+      {/* OG TAGS */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://nextjs-pwa-template-repo.vercel.app" />
+      <meta property="og:title" content="The Next.js Progressive Web App Template" />
+      <meta
+        property="og:description"
+        content="A Solid Foundation for Building Scalable and Efficient Progressive Web Application!"
+      />
+      <meta property="og:image" content="/icons/og-image.png" />
+      {/* TWITTER */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@AjayKanniyappan" />
+      <meta property="twitter:url" content="https://nextjs-pwa-template-repo.vercel.app" />
+      <meta property="twitter:title" content="The Next.js Progressive Web App Template" />
+      <meta
+        property="twitter:description"
+        content="A Solid Foundation for Building Scalable and Efficient Progressive Web Application!"
+      />
+      <meta property="twitter:image" content="/icons/og-image.png" />
     </>
   );
 }

@@ -69,7 +69,7 @@
 
 **Next.js PWA template** 🐾 is a starter template that provides a comprehensive setup for building a progressive web app (PWA) using the Next.js framework. Don't worry about the configuration 🔨 this template will take care of that, focus on your codes⌨️ and project ideas💡
 
-This template includes a pre-configured setup for service workers, offline support, and manifest files, making it easy for developers to create a high-performing PWA with minimal setup. The template also includes a basic layout and routing system, along with some basic components and styles, to help developers get started quickly. Additionally, it includes a range of popular libraries and tools, such as Prettier, ESLint, and Tailwind CSS, to ensure that the code is well-formatted and follows best practices. With the help of this template, developers can easily create a fast and reliable PWA that can work seamlessly across all devices.
+This template includes a pre-configured setup for service workers, offline support, and manifest files, making it easy for developers to create a high-performing PWA with minimal setup. The template also includes a basic layout and routing system, along with some basic components and styles, to help developers get started quickly. This template give you the **end to end type safety**. Additionally, it includes a range of popular libraries and tools, such as Prettier, ESLint, and Tailwind CSS, to ensure that the code is well-formatted and follows best practices. With the help of this template, developers can easily create a fast and reliable PWA that can work seamlessly across all devices.
 
 ## 📷 Gallery
 
